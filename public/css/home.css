@@ -1,0 +1,37 @@
+.container-fluid{
+    margin-top: 1.2em;
+}
+
+.card {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+i {
+  margin-right: 10px;
+}
+
+.alertText {
+    min-height: 4em;
+}
+
+.space-right {
+    margin-right: 1em;
+}
+
+.modal-lg {
+  max-width: 100% !important;
+}
+
+.paied-width{
+    min-width: 6.6em;
+    max-width: 8em;
+}
+
+@media print
+{    
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+
