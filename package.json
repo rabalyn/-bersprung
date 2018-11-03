@@ -5,21 +5,20 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "export DEBUG='app:* serialization:* socketHobbit:*' ; nodemon --ignore 'data' --exec npm run babel-node -- app.js",
-    "babel-node": "babel-node --ignore='node_modules'"
+    "start": "export DEBUG='app:* serialization:* socketHobbit:*' ; pm2 start ecosystem.config.js"
   },
   "author": "@rabalyn (Nils Mundhenke)",
   "license": "MIT",
   "dependencies": {
-    "debug": "^3.1.0",
+    "debug": "^3.2.5",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
-    "handlebars": "^4.0.11",
-    "moment": "^2.22.1",
-    "nodemon": "^1.17.3"
+    "handlebars": "^4.0.12",
+    "moment": "^2.22.2",
+    "nodemon": "^1.18.4"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
+    "babel-preset-env": "^1.7.0"
   }
 }
